@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <title>HOME PAGE</title>
+    <script>
+        function redirectToSpeechPage() {
+            window.location.href = 'speech.html';
+        }
+    </script>
+</head>
+<body>
+    <h1 class="top-heading">EMBED IT!</h1>
+    
+    <!--Audio Signal-->
+    <div class="audio-signal" onclick="redirectToSpeechPage()">
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+    </div>
+    <!--Images-->
+    <div class="container">
+        <div class="image-container">
+            <img class="image-to-hide" src="../static/css/second.jpg" alt="First Image">
+        </div>
+        <img class="overlay-image" src="../static//css/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg.avif" alt="Second Image">
+    </div>
+    <!-- Text-->
+    <div class="typing-text">
+        Embed Text inside Text !
+    </div>
+
+
+</body>
+</html>

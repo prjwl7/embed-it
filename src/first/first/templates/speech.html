@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPEECH</title>
+    <link rel="stylesheet" href="../static/css/speech.css">
+    <script>
+        function redirectToSpeechOutputPage() {
+            window.location.href = 'output_speech.html';
+        }
+    </script>
+</head>
+<body>
+    <h1 class="top-heading-speech">SPEECH TO SPEECH</h1>
+    <div class="audio-signal" onclick="redirectToSpeechPage()">
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+    </div>
+    <form action="{% url 'output_speech' %}" method="post" enctype="multipart/form-data" class="audio-files-form">
+        {% csrf_token %}
+        <!-- Carrier Audio File -->
+        <label for="carrier">Select Carrier Audio File:</label>
+        <input type="file" id="carrier" name="carrier" accept="audio/wav" required>
+        <br>
+
+        <!-- Secret Audio File -->
+        <label for="secret">Select Secret Audio File:</label>
+        <input type="file" id="secret" name="secret" accept="audio/wav" required>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-audio" onclick="redirectToSpeechOutputPage()">Upload Files</button>
+    </form>
+</body>
+</html>

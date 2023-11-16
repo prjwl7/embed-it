@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUTPUT</title>
+    <link rel="stylesheet" href="../static/css/output_speech.css">
+</head>
+<body>
+    <h1 class="top-heading-speech-output">This is the output audio</h1>
+
+    <div class="audio-signal">
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+    </div>
+
+    <div class="audio-container">
+        <audio controls>
+            <!-- Replace 'your_audio_file_path' with the actual path to your audio file -->
+            <source src="{{ output_audio_path }}" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Download option -->
+        <a href="" download="output_audio.wav">
+            <button class="download-button">Download</button>
+        </a>
+    </div>
+</body>
+</html>

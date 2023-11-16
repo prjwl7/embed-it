@@ -1,0 +1,151 @@
+body {
+    background-color: #28282B;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    color: white;
+}
+
+.top-heading-speech-output{
+    color: #0066cc;
+    height: 50px;
+    border: 2px solid blue;
+    width: 400px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.audio-signal{
+    background-color: transparent;
+    width: 30%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio-container{
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+
+.audio-bar-1{
+    height: 20%;
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+    animation: waveAnimation 1s infinite alternate;
+}
+.audio-bar-2{
+    height: 35%;
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+    animation: waveAnimation2 1s infinite alternate;
+}
+.audio-bar-3{
+    height: 50%;
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+    animation: waveAnimation3 1s infinite alternate;
+}
+.audio-bar-4{
+    height: 65%;
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+    animation: waveAnimation 1s infinite alternate;
+}
+.audio-bar-5{
+    height: 80%;
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+    animation: waveAnimation5 1s infinite alternate;
+}
+.audio-bar-6{
+    height: 95%;
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+    animation: waveAnimation4 1s infinite alternate;
+}
+.audio-bar-7{
+    height: 20%;
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+    animation: waveAnimation 1s infinite alternate;
+}
+.audio-bar-8{
+    height: 35%;
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+    animation: waveAnimation2 1s infinite alternate;
+}
+.audio-bar-9{
+    height: 50%;
+    background-color: white;
+    width: 10px;
+    border-radius: 10px;
+    animation: waveAnimation3 1s infinite alternate;
+}
+
+@keyframes waveAnimation {
+    0% {
+        height: 20%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+@keyframes waveAnimation2 {
+    0% {
+        height: 35%;
+    }
+    100% {
+        height: 10%;
+    }
+}
+@keyframes waveAnimation3 {
+    0% {
+        height: 50%;
+    }
+    100% {
+        height: 70%;
+    }
+}
+@keyframes waveAnimation4 {
+    0% {
+        height: 95%;
+    }
+    100% {
+        height: 33%;
+    }
+}
+@keyframes waveAnimation5 {
+    0% {
+        height: 80%;
+    }
+    100% {
+        height: 63%;
+    }
+}
+
+a:hover{
+    cursor: pointer;
+}
